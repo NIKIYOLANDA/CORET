@@ -16,445 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <style>
-      .bg-sukasukagua {
-        background-color: rgba(225, 205, 170, 0.55);
-      }
-
-     
-
-      .btn-pesan{
-        background-color: #3B2F2F;
-      }
-
-      .btn-sukasukagua {
-        background-color: #A67C52;
-      }
-
-      .btn-sukasukagua:hover {
-        background-color: #C9A77B;
-      }
-
-      .nav-item > .nav-link:hover {
-        color: #3B2F2F;
-        border-bottom: 2px solid #3B2F2F;
-      }
-
-      .nav-item > a {
-        font-size: 15px;
-        margin-right: 10px;
-      }
-
-      .btn-sukasukagua {
-        border-radius: 10px;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-      }
-
-      .btn-light {
-        border-radius: 10px;
-        font-size: 15px;
-      }
-
-      #main-content {
-        background-color: #F1E7D0;
-      }
-
-      .navbar {
-        border-bottom: 3px solid #D1B48C;
-      }
-      .nav-item > .nav-link.active {
-        color: #3B2F2F !important;
-        border-bottom: 2px solid #3B2F2F;
-      }
-
-      body {
-        background-color: #F7F3EC;
-        color: #3B2F2F;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      .font-display {
-        font-family: "Quicksand", sans-serif;
-        font-weight: 700;
-        color: #3B2F2F;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      .nav-item > a {
-        font-size: 14px;
-      }
-
-      .text-content h1 {
-        font-size: 3rem;
-        line-height: 1.12;
-      }
-
-      @media (max-width: 768px) {
-        .text-content h1 {
-          font-size: 2rem;
-        }
-
-        .tentang-card{
-          border-radius: 200px 200px 0 0 !important;
-        }
-      }
-
-      .hero-section {
-        position: relative;
-        overflow: hidden;
-        padding: 4rem 0 5rem;
-      }
-
-      /* Maskot animasi */
-      @keyframes floatMascot {
-        0%,
-        100% {
-          transform: translateY(0px) rotate(0deg);
-        }
-
-        50% {
-          transform: translateY(-10px) rotate(1.5deg);
-        }
-      }
-      
-      .animate-mascot {
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      .hero-image-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .hero-pod {
-        position: absolute;
-        inset: 1rem;
-        background: linear-gradient(
-          180deg,
-          #EAD7C0 0%,
-          rgba(247, 240, 228, 0.5) 60%,
-          #CDB28A 100%
-        );
-        border-radius: 44px;
-        box-shadow: 0 14px 28px -6px rgba(166, 124, 82, 0.18);
-        border: 4px solid #fff;
-        transform: rotate(2deg);
-      }
-
-      .teks {
-        color: #403332;
-        font-size: 33px;
-        padding: 5px;
-        margin-top: 0;
-        border-radius: 10px;
-        position: absolute;
-        background: linear-gradient(
-          180deg,
-          #EAD7C0 0%,
-          rgba(247, 240, 228, 0.5) 60%,
-          #CDB28A 100%
-        );
-        box-shadow: 0 14px 28px -6px rgba(166, 124, 82, 0.18);
-        border: 4px solid #fff;
-        transform: rotate(2deg);
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      /* TRUST-BAR */
-      .trust-bar {
-        padding: 2rem 0;
-        background-color: #FFFCF7;
-        border-top: 1px solid #3B2F2F;
-        border-bottom: 1px solid #3B2F2F;
-      }
-
-      .trust-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 12px;
-        background-color: #E8D8C3;
-        color: #3B2F2F;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-      }
-
-      /* KATEGORI */
-
-      .best-seller {
-        display: inline-block;
-        padding: 5px 12px;
-        background: #B86B4B;
-        color: #FFF8EE;
-        border-radius: 20px;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        }
-
-      .kategori-card{
-      width:100%;
-      height:100%;
-      padding:40px;
-      background:linear-gradient(135deg,#FFFFFF,#F5EFE6);
-      box-shadow:0 15px 30px rgba(0,0,0,.12);
-      transition:.35s ease;
-      cursor:pointer;
-
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      }
-
-      .kategori-card:hover{
-      transform:translateY(-8px) rotate(-2deg);
-      box-shadow:0 20px 40px rgba(0,0,0,.18);
-      }
-
-      .kategori-card1{
-        background: #fff;
-        border: 2px solid #3B2F2F;
-        border-radius:
-        55% 45% 60% 40% /
-        40% 55% 45% 60%;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        height: 100%;
-        margin-top: 20px;
-        transform: rotate(-2deg);
-        transition: 0.3s;
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      .kategori-card2{
-        background: #fff;
-        border: 2px solid #3B2F2F;
-        border-radius: 10px;border-radius:
-        60% 40% 50% 50% /
-        50% 60% 40% 50%;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        height: 100%;
-        margin-top: 20px;
-        transform: rotate(2deg);
-        transition: 0.3s;
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      .kategori-card3{
-        background: #fff;
-        border: 2px solid #3B2F2F;
-        border-radius:
-        40% 60% 35% 65% /
-        55% 35% 65% 45%;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        height: 100%;
-        margin-top: 20px;
-        transform: rotate(-2deg);
-        transition: 0.3s;
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      .kategori-card4{
-        background: #fff;
-        border: 2px solid #3B2F2F;
-        border-radius:
-        65% 35% 55% 45% /
-        35% 65% 40% 60%;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        height: 100%;
-        margin-top: 20px;
-        transform: rotate(2deg);
-        transition: 0.3s;
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-
-      .kategori-icon{
-        width: 64px;
-        height: 64px;
-        margin: 0 auto 1rem;
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.75rem;
-        background-color: #8B5E3C;
-        color: #FFFFFF;
-        transition: transform 0.3s ease;
-      }
-      
-      .text-judul{
-        display: block;
-        color: #A67C52;
-        text-align: center;
-      }
-
-      .kategori .card:hover .kategori icon { transform: scale(1.1);}
-
-      .bestseller-section{
-        padding: 4rem 0;
-        background-color: #fff;
-        border-top: 1px solid #3B2F2F;
-        border-bottom: 1px solid #3B2F2F;
-      }
-      .product-card{
-        background-color:#EDE3D5;
-        border: 1px solid #3B2F2F;
-        border-radius: 30px;
-        padding: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        transition: all 0.3s ease;
-        transition: transform .25s ease,
-        box-shadow .25s ease;
-      }
-
-      .product-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 35px rgba(59, 47, 47, .18);
-      }
-
-      .product-img-wrap{
-        position: relative;
-        height: 220px;
-        background-color: white;
-        border: 1px solid #3B2F2F;
-        border-radius: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-      }
-      .product-tag {
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 0.25rem 0.75rem;
-        border-radius: 999px;
-        font-size: 11px;
-        font-weight: 700;
-        color: #B86B4B;
-        border: 1px solid #E8D6C2;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-      }
-
-      .product-tag.green { color: #6F8F72; }
-
-      .product-tag .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #B86B4B;
-      }
-
-      .product-tag.green .dot { background-color: #6F8F72; }
-
-      .product-icon {
-        width: 200px;
-        height: 200px;
-        transition: transform 0.3s ease;
-      }
-
-      .product-card:hover .product-icon { transform: scale(1.05); }
-
-      .product-footer {
-        margin-top: 1.5rem;
-        padding-top: 1rem;
-        border-top: 1px solid rgba(232, 214, 194, 0.7);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .tentang-section { padding: 4rem 0; }
-      .tentang-card {
-        background: #E8DDCF;
-        border: 1px solid #3B2F2F;
-        border-radius: 36px;
-        padding: 3rem 2rem;
-        box-shadow: 0 14px 28px -6px #A67C52;
-      }
-
-      .mascot-badge-circle {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        animation: floatMascot 4.5s ease-in-out infinite;
-      }
-
-      /* TESTIMONI */
-      .testimoni-section{
-        padding: 4rem 0;
-        background-color: #F1E7D0;
-        border-top: 1px solid #3B2F2F;
-        border-bottom: #3B2F2F;
-      }
-
-      .testi-card{
-        background-color: #fff;
-        border: 1px solid #3B2F2F;
-        border-radius: 24px;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-      }
-
-      .testi-avatar{
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Quicksand', sans-serif;
-        font-weight:  700;
-        font-size: 12px;
-        background-color: #3B2F2F;
-        color: white;
-      }
-
-      .testi-avatar img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 100px;
-      }
-      .testi-avatar.cream{
-        background-color: #D9B08C;
-        color: #B86B4B;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -504,7 +66,8 @@
               <a href="#" class="btn btn-light position-relative rounded-pill">
                 <i class="bi bi-cart3"></i>
                 <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill btn-sukasukagua">
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill btn-sukasukagua"
+                >
                   0
                   <span class="visually-hidden">Keranjang Kosong</span>
                 </span>
@@ -518,7 +81,7 @@
 
     <!-- MAIN CONTENT -->
     <main id="main-content">
-      <!-- HERO SECTIOM -->
+      <!-- HERO SECTION -->
       <section class="hero-section" id="home">
         <div class="container position-relative" style="z-index: 1">
           <div class="row align-items-center">
@@ -537,18 +100,15 @@
                 seni, semua siap menemani setiap ide kreatifmu.
               </p>
               <div
-                class="action d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
-              >
+                class="action d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
                 <a
                   href="#"
                   class="btn btn-sukasukagua fw-bold px-4 py-3 rounded-4 d-inline-flex align-items-center justify-content-center gap-2"
-                  >Lihat Produk</a
-                >
+                  >Lihat Produk</a>
                 <a
                   href="#"
                   class="btn btn-light fw-bold px-4 py-3 rounded-4 border"
-                  >Jelajahi Koleksi</a
-                >
+                  >Jelajahi Koleksi</a>
               </div>
             </div>
 
@@ -638,60 +198,82 @@
       <!-- KATEGORI CONTENT -->
       <section id="kategori" class="py-5">
         <div class="container">
-          <span class="text-judul fw-bold text-uppercase small" style="letter-spacing: .05em;">Pilihan Alat Gambar</span>
+          <span
+            class="text-judul fw-bold text-uppercase small"
+            style="letter-spacing: 0.05em"
+            >Pilihan Alat Gambar</span
+          >
           <h2 class="mt-1 text-center">Temukan Perlengkapan Berkualitas</h2>
-        
 
-        <div class="row g-4">
-          <div class="col-6 col-md-3">
-            <div class="kategori-card kategori-card1">
-              <div class="kategori-icon">
-                <i class="bi bi-pencil"></i>
+          <div class="row g-4 mt-2">
+            <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                <div class="kategori-icon">
+                  <i class="bi bi-pencil"></i>
+                </div>
+                <h3 class="h6 mb-1">Pensil Gambar</h3>
+                <p class="small text-secondary mb-0">
+                  Pensil untuk menggambar dan membuat sketsa
+                </p>
               </div>
-              <h3 class="h6 mb-1">Pensil Gambar</h3>
-              <p class="small text-secondary mb-0"> Pensil untuk menggambar dan membuat sketsa</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                <div class="kategori-icon">
+                  <i class="bi bi-palette"></i>
+                </div>
+                <h3 class="h6 mb-1">Alat Mewarnai</h3>
+                <p class="small text-secondary mb-0">
+                  Pilihan alat untuk mewarnai berbagai karya
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                <div class="kategori-icon">
+                  <i class="bi bi-brush"></i>
+                </div>
+                <h3 class="h6 mb-1">Perlengkapan Sketsa</h3>
+                <p class="small text-secondary mb-0">
+                  Perlengkapan untuk kebutuhan sketsa dan ilustrasi
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                <div class="kategori-icon">
+                  <i class="bi bi-easel2"></i>
+                </div>
+                <h3 class="h6 mb-1">Alat Seni</h3>
+                <p class="small text-secondary mb-0">
+                  Beragam alat gambar dengan kualitas tinggi
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-md-3">
-            <div class="kategori-card kategori-card2">
-              <div class="kategori-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <h3 class="h6 mb-1">Alat Mewarnai</h3>
-              <p class="small text-secondary mb-0">Pilihan alat untuk mewarnai berbagai karya</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="kategori-card kategori-card3">
-              <div class="kategori-icon">
-                <i class="bi bi-brush"></i>
-              </div>
-              <h3 class="h6 mb-1">Perlengkapan Sketsa</h3>
-              <p class="small text-secondary mb-0">Perlengkapan untuk kebutuhan sketsa dan ilustrasi</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="kategori-card kategori-card4">
-              <div class="kategori-icon">
-                <i class="bi bi-easel2"></i>
-              </div>
-              <h3 class="h6 mb-1">Alat Seni</h3>
-              <p class="small text-secondary mb-0">Beragam alat gambar dengan kualitas tinggi</p>
-            </div>
-          </div>
-        </div>
         </div>
       </section>
 
       <!-- BEST SELLER -->
       <section id="bestseller" class="bestseller-section">
         <div class="container">
-          <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between mb-5">
+          <div
+            class="d-flex flex-column flex-md-row align-items-md-end justify-content-between mb-5"
+          >
             <div>
-              <span class="best-seller fw-bold text-uppercase small" style="letter-spacing: .05em;">FAVORIT MINGGU INI</span>
-              <h2 class="mt-3" style="font-size: 20PX;">Produk yang sedang populer/direkomendasikan minggu ini.</h2>
+              <span
+                class="best-seller fw-bold text-uppercase small"
+                style="letter-spacing: 0.05em"
+                >FAVORIT MINGGU INI</span
+              >
+              <h2 class="mt-3" style="font-size: 20px">
+                Produk yang sedang populer/direkomendasikan minggu ini.
+              </h2>
             </div>
-            <p class="text-secondary small mb-0 mt-2 mt-md-0" style="max-width: 24rem;">
+            <p
+              class="text-secondary small mb-0 mt-2 mt-md-0"
+              style="max-width: 24rem"
+            >
               Menyediakan berbagai macam alat Seni
             </p>
           </div>
@@ -706,26 +288,44 @@
                       <span class="dot"></span>
                       <span>Terlaris</span>
                     </div>
-                    <img src="gambar/pensil-warna.jpg" alt="">
+                    <img src="gambar/pensil-warna.jpg" alt="" />
                   </div>
                   <div class="mt-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="small fw-semibold text-secondary text-uppercase" style="letter-spacing: .05em;">PENSIL WARNA</span>
-                      <span class="small fw-bold text-warning" style="font-size: 12px;"><i class="bi bi-star-fill"></i> 4.9 (184)</span>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span
+                        class="small fw-semibold text-secondary text-uppercase"
+                        style="letter-spacing: 0.05em"
+                        >PENSIL WARNA</span
+                      >
+                      <span
+                        class="small fw-bold text-warning"
+                        style="font-size: 12px"
+                        ><i class="bi bi-star-fill"></i> 4.9 (184)</span
+                      >
                     </div>
-                    <h3 class="h5 mt-2 mb-1">Pensil Warna Faber Castell </h3>
-                    <p class="small text-secondary mb-0">Pensil warna berkualitas dengan warna cerah dan mudah dibaurkan, cocok untuk menggambar dan mewarnai.</p>
+                    <h3 class="h5 mt-2 mb-1">Pensil Warna Faber Castell</h3>
+                    <p class="small text-secondary mb-0">
+                      Pensil warna berkualitas dengan warna cerah dan mudah
+                      dibaurkan, cocok untuk menggambar dan mewarnai.
+                    </p>
                   </div>
                 </div>
                 <div class="product-footer">
                   <div>
-                    <span class="d-block" style="font-size: 11px;color: #8B8178;">Harga</span>
+                    <span
+                      class="d-block"
+                      style="font-size: 11px; color: #8b8178"
+                      >Harga</span
+                    >
                     <span class="font-display fw-bold fs-5">Rp175.000</span>
                   </div>
-                  <button  onclick="handleAddToCart(arfhn, )"
-                  class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
+                  <button
+                    onclick="handleAddToCart(arfhn, )"
+                    class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
                   >
-                  <i class="bi bi-plus-lg"></i> Pesan
+                    <i class="bi bi-plus-lg"></i> Pesan
                   </button>
                 </div>
               </article>
@@ -740,26 +340,45 @@
                       <span class="dot"></span>
                       <span>Paling dicari</span>
                     </div>
-                    <img src="gambar/sketchbook.jpg" alt="" width="250px">
+                    <img src="gambar/sketchbook.jpg" alt="" />
                   </div>
                   <div class="mt-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="small fw-semibold text-secondary text-uppercase" style="letter-spacing: .05em;">SKETCHBOOK</span>
-                      <span class="small fw-bold text-warning" style="font-size: 12px;"><i class="bi bi-star-fill"></i> 4.9 (184)</span>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span
+                        class="small fw-semibold text-secondary text-uppercase"
+                        style="letter-spacing: 0.05em"
+                        >SKETCHBOOK</span
+                      >
+                      <span
+                        class="small fw-bold text-warning"
+                        style="font-size: 12px"
+                        ><i class="bi bi-star-fill"></i> 4.9 (184)</span
+                      >
                     </div>
                     <h3 class="h5 mt-2 mb-1">Stillman & Birn (Alpha Series)</h3>
-                    <p class="small text-secondary mb-0">Sketchbook berkualitas dengan kertas halus dan tahan tinta, cocok untuk sketsa, ilustrasi, dan berbagai teknik menggambar.</p>
+                    <p class="small text-secondary mb-0">
+                      Sketchbook berkualitas dengan kertas halus dan tahan
+                      tinta, cocok untuk sketsa, ilustrasi, dan berbagai teknik
+                      menggambar.
+                    </p>
                   </div>
                 </div>
                 <div class="product-footer">
                   <div>
-                    <span class="d-block" style="font-size: 11px;color: #8B8178;">Harga</span>
+                    <span
+                      class="d-block"
+                      style="font-size: 11px; color: #8b8178"
+                      >Harga</span
+                    >
                     <span class="font-display fw-bold fs-5">Rp219.000</span>
                   </div>
-                  <button  onclick="handleAddToCart(arfhn, )"
-                  class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
+                  <button
+                    onclick="handleAddToCart(arfhn, )"
+                    class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
                   >
-                  <i class="bi bi-plus-lg"></i> Pesan
+                    <i class="bi bi-plus-lg"></i> Pesan
                   </button>
                 </div>
               </article>
@@ -774,26 +393,44 @@
                       <span class="dot"></span>
                       <span>Murah</span>
                     </div>
-                    <img src="gambar/standing-easel.jpg" alt="">
+                    <img src="gambar/standing-easel.jpg" alt="" />
                   </div>
                   <div class="mt-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="small fw-semibold text-secondary text-uppercase" style="letter-spacing: .05em;">EASEL & KANVAS</span>
-                      <span class="small fw-bold text-warning" style="font-size: 12px;"><i class="bi bi-star-fill"></i> 4.9 (184)</span>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span
+                        class="small fw-semibold text-secondary text-uppercase"
+                        style="letter-spacing: 0.05em"
+                        >EASEL & KANVAS</span
+                      >
+                      <span
+                        class="small fw-bold text-warning"
+                        style="font-size: 12px"
+                        ><i class="bi bi-star-fill"></i> 4.9 (184)</span
+                      >
                     </div>
                     <h3 class="h5 mt-2 mb-1">Standing Easel Medium Size</h3>
-                    <p class="small text-secondary mb-0">Easel kayu praktis dengan ukuran medium, cocok untuk menopang kanvas saat melukis di rumah maupun studio.</p>
+                    <p class="small text-secondary mb-0">
+                      Easel kayu praktis dengan ukuran medium, cocok untuk
+                      menopang kanvas saat melukis di rumah maupun studio.
+                    </p>
                   </div>
                 </div>
                 <div class="product-footer">
                   <div>
-                    <span class="d-block" style="font-size: 11px;color: #8B8178;">Harga</span>
+                    <span
+                      class="d-block"
+                      style="font-size: 11px; color: #8b8178"
+                      >Harga</span
+                    >
                     <span class="font-display fw-bold fs-5">Rp150.000</span>
                   </div>
-                  <button  onclick="handleAddToCart(arfhn, )"
-                  class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
+                  <button
+                    onclick="handleAddToCart(arfhn, )"
+                    class="btn btn-danger btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2"
                   >
-                  <i class="bi bi-plus-lg"></i> Pesan
+                    <i class="bi bi-plus-lg"></i> Pesan
                   </button>
                 </div>
               </article>
@@ -809,36 +446,78 @@
             <div class="row g-3 align-items-center">
               <div class="col-lg-5 text-center">
                 <div class="mascot-badge-circle">
-                  <img src="gambar/chibi-tentang.png" alt="" class="img-fluid">
+                  <img
+                    src="gambar/chibi-tentang.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <h3 class="h5 mt-4">CORET</h3>
-                <p class="small text-secondary mb-0">Menyediakan berbagai alat senimu</p>
+                <p class="small text-secondary mb-0">
+                  Menyediakan berbagai alat senimu
+                </p>
               </div>
               <div class="col-lg-7">
-                <span class="fw-bold text-uppercase small" style="letter-spacing: .05em;">Tentang Coret</span>
+                <span
+                  class="fw-bold text-uppercase small"
+                  style="letter-spacing: 0.05em"
+                  >Tentang Coret</span
+                >
                 <h2 class="mt-2">Temukan Perlengkapan Seni untuk Berkarya</h2>
                 <p class="text-secondary">
-                  CORET hadir untuk menyediakan berbagai alat menggambar dan seni yang dapat digunakan oleh semua kalangan. Mulai dari pensil, sketchbook, hingga perlengkapan seni lainnya, CORET membantu menyediakan pilihan alat yang mendukung kebutuhan menggambar, membuat sketsa, dan mengekspresikan kreativitas.
+                  CORET hadir untuk menyediakan berbagai alat menggambar dan
+                  seni yang dapat digunakan oleh semua kalangan. Mulai dari
+                  pensil, sketchbook, hingga perlengkapan seni lainnya, CORET
+                  membantu menyediakan pilihan alat yang mendukung kebutuhan
+                  menggambar, membuat sketsa, dan mengekspresikan kreativitas.
                 </p>
                 <div class="row g-3 pt-2">
                   <div class="col-sm-6">
-                    <div class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2" style="border-color: #3B2F2F !important;">
-                      <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span>Beragam Alat Menggambar
+                    <div
+                      class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                      style="border-color: #3b2f2f !important"
+                    >
+                      <span
+                        class="d-inline-block rounded-circle bg-danger"
+                        style="width: 8px; height: 8px"
+                      ></span
+                      >Beragam Alat Menggambar
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2" style="border-color: #3B2F2F !important;">
-                      <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span> Untuk Semua Kalangan
+                    <div
+                      class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                      style="border-color: #3b2f2f !important"
+                    >
+                      <span
+                        class="d-inline-block rounded-circle bg-danger"
+                        style="width: 8px; height: 8px"
+                      ></span>
+                      Untuk Semua Kalangan
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2" style="border-color: #3B2F2F !important;">
-                      <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span> Pilihan Produk Berkualitas
+                    <div
+                      class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                      style="border-color: #3b2f2f !important"
+                    >
+                      <span
+                        class="d-inline-block rounded-circle bg-danger"
+                        style="width: 8px; height: 8px"
+                      ></span>
+                      Pilihan Produk Berkualitas
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2" style="border-color: #3B2F2F !important;">
-                      <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span> Pond Naravit pernsh beli disini
+                    <div
+                      class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                      style="border-color: #3b2f2f !important"
+                    >
+                      <span
+                        class="d-inline-block rounded-circle bg-danger"
+                        style="width: 8px; height: 8px"
+                      ></span>
+                      Pond Naravit pernah beli disini
                     </div>
                   </div>
                 </div>
@@ -851,20 +530,27 @@
       <!-- TESTIMONI -->
       <section id="testimoni" class="testimoni-section">
         <div class="container">
-          <div class="text-center mx-auto mb-5" style="max-width: 36rem;">
-            <span class="text-danger fw-bold text-uppercase small" style="letter-spacing: .05em;">KATA MEREKA</span>
+          <div class="text-center mx-auto mb-5" style="max-width: 36rem">
+            <span
+              class="text-danger fw-bold text-uppercase small"
+              style="letter-spacing: 0.05em"
+              >KATA MEREKA</span
+            >
             <h2 class="mt-1">Ulasan Pelanggan Setia</h2>
           </div>
 
-
-          <div 
-          class="carousel slide"
-          id="carouselExampleSlidesOnly" 
-          data-bs-ride="carousel" 
-          data-bs-interval="1000">
+          <div
+            class="carousel slide"
+            id="carouselExampleSlidesOnly"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
             <div class="carousel-inner">
               <!-- SLIDE 1 -->
-              <div class="carousel-item active" style="color: black !important; border: none !important;">
+              <div
+                class="carousel-item active"
+                style="color: black !important; border: none !important"
+              >
                 <div class="row g-4">
                   <div class="col-md-4">
                     <div class="testi-card">
@@ -876,15 +562,20 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"Kualitas Produk yang dijual brand ini sangat bagus, anak dan istri saya jadi semangat menggambar."</p>
+                        <p class="small mb-0">
+                          "Kualitas Produk yang dijual brand ini sangat bagus,
+                          anak dan istri saya jadi semangat menggambar."
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/mypacar.webp" alt="">
+                          <img src="gambar/mypacar.webp" alt="" />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Naravit Lertratkosum</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Jakarta</span>
                         </div>
                       </div>
                     </div>
@@ -899,15 +590,20 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"Kemarin saya dibelikan teman saya dari brand ini, dan yap saya sangat suka."</p>
+                        <p class="small mb-0">
+                          "Kemarin saya dibelikan teman saya dari brand ini, dan
+                          yap saya sangat suka."
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/pacarnya-pacarku.jpg" alt="">
+                          <img src="gambar/phuwin.jpg" alt="" />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Phuwin Tangsakyuen</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Bandung</span>
                         </div>
                       </div>
                     </div>
@@ -922,15 +618,22 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"Saya kemarin di beliin sama papa saya barengan sama punya mama. saya sangat suka!!!!!!"</p>
+                        <p class="small mb-0">
+                          "Bagus banget produknya, saya jadi makin semangat"
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/anaknya-pacarnya-pacarku.jpg" alt="">
+                          <img
+                            src="gambar/permpoon.jpg"
+                            alt=""
+                          />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Permpoon</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Yogyakarta</span>
                         </div>
                       </div>
                     </div>
@@ -938,7 +641,10 @@
                 </div>
               </div>
               <!-- SLIDE 2 -->
-              <div class="carousel-item" style="color: black !important; border: none !important;">
+              <div
+                class="carousel-item"
+                style="color: black !important; border: none !important"
+              >
                 <div class="row g-4">
                   <div class="col-md-4">
                     <div class="testi-card">
@@ -950,15 +656,20 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"Kualitas Produk yang dijual brand ini sangat bagus,pacar saya jadi semangat menggambar."</p>
+                        <p class="small mb-0">
+                          "Kualitas Produk yang dijual brand ini sangat
+                          bagus,pacar saya jadi semangat menggambar."
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/william.jpg" alt="">
+                          <img src="gambar/william.jpg" alt="" />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Jakrapatr Kaewpanpong</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Medan</span>
                         </div>
                       </div>
                     </div>
@@ -973,15 +684,19 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"Saya sangat suka produk dari brand ini"</p>
+                        <p class="small mb-0">
+                          "Saya sangat suka produk dari brand ini"
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/est.jpg" alt="">
+                          <img src="gambar/est.jpg" alt="" />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Est Supha Sangaworawong</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Bali</span>
                         </div>
                       </div>
                     </div>
@@ -996,15 +711,19 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
-                        <p class="small mb-0">"yayayayayayayyayayayayayyaaya bgusn't"</p>
+                        <p class="small mb-0">
+                          "yayayayayayayyayayayayayyaaya bgusn't"
+                        </p>
                       </div>
-                      <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                      <div
+                        class="d-flex align-items-center gap-3 mt-4 pt-3 border-top"
+                      >
                         <div class="testi-avatar">
-                          <img src="gambar/wesley.jpg" alt="">
+                          <img src="gambar/wesley.jpg" alt="" />
                         </div>
                         <div>
                           <h4 class="h6 mb-0">Wesley</h4>
-                          <span class="small text-secondary">Thailand</span>
+                          <span class="small text-secondary">Malang</span>
                         </div>
                       </div>
                     </div>
@@ -1016,14 +735,147 @@
         </div>
       </section>
 
-      <!-- GALERI -->
-       <section id="galeri" class="galeri-section">
+      <!-- GALERI SECTION -->
+      <section id="galeri" class="galeri-section">
         <div class="container">
-          
+          <div class="text-center mx-auto mb-5" style="max-width: 36rem">
+            <span
+              class="text-danger fw-bold text-uppercase small"
+              style="letter-spacing: 0.05em"
+              >GALERI</span
+            >
+            <h2 class="mt-1">Momen & Karya dari CORET</h2>
+            <p class="text-secondary small mb-0 mt-2">
+              COLLAB BRAND AMBASADOR DENGAN PRODUK BRAND CORET
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-6 col-md-3">
+              <div class="galeri-item">
+                <img src="gambar/pondpensil.png" alt="Galeri 1" />
+                <div class="galeri-overlay">
+                  <span>Pond Naravit x Pensil Sketsa</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="galeri-item">
+                <img src="gambar/pphu1.jpe" alt="Galeri 2" />
+                <div class="galeri-overlay">
+                  <span>Phuwin Tangsakyuen x Cat Akrilic</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="galeri-item">
+                <img src="gambar/pondsketchbook.jpe" alt="Galeri 3" />
+                <div class="galeri-overlay">
+                  <span>Naravit Lertratkosum x Sketcbook</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="galeri-item">
+                <img src="gambar/pphu2.jpe" alt="Galeri 4" />
+                <div class="galeri-overlay">
+                  <span>Phuwin Tangsakyuen x Easel</span>
+                </div>
+              </div>
+            </div>
+            <div class="link-ig">
+            <i class="bi bi-instagram"></i>
+            <a href="https://www.instagram.com/syllanda_yn.lvrs?stkn=MXF4b2d3dGZ5ZXVmZQ==" class="ig-coret">Kunjungi Instagram CORET untuk melihat dokumentasi lainnya</a>
+            </div>
+          </div>
         </div>
-       </section>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box">
+            <div class="row align-items-center g-4 position-relative" style="z-index: 1;">
+              <div class="col-md-8 text-center text-md-start">
+                <h2 class="text-white mb-2">Temukan Perlengkapan Seni untuk Wujudkan Ide Kreatif Anda!</h2>
+                <p class="text-white-50 mb-0">
+                 elajahi alat dan bahan seni berkualitas untuk mendukung kreativitas Anda.
+                </p>                
+              </div>
+              <div class="col-md-4 text-center text-md-end">
+                <a href="#bestseller" class="btn btn-light fw-bold text-danger px-4 py-3 rounded-4">
+                  Lihat Produk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- FOOTER -->
+     <footer class="footer-coret">
+      <div class="container">
+        <div class="row g-4 pb-4 border-bottom" style="border-color: rgba(232, 214, 194, 0.7) !important">
+          <div class="col-md-4">
+            <div class="d-flexalign-items-center mb-3">
+              <img src="gambar/logo2.png" alt="" width="48" class="me-2" />
+              <span class="font-display fs-4 fw-bold">Coret<span class="text-danger">.</span></span>
+            </div>
+            <p class="small text-secondary mb-2">
+              CORET menyediakan alat dan bahan seni berkualitas untuk mendukung kreativitas semua kalangan.
+            </p>
+            <p class="small fw-semibold mb-0">Jam Operasional: 08.00 - 22.00 WIB</p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h4>Navigasi</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#kategori">Kategori Produk</a></li>
+              <li><a href="#bestseller">Menu Favorit</a></li>
+              <li><a href="#tentang">Kisah Coret</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h4>Layanan Konsumen</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li><a href="#">Kategori Produk</a></li>
+              <li><a href="#">Cara Pemesanan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4>Hubungi Kami</h4>
+            <p class="small text-secondary mb-3">
+              D. Sarang Burung, Kec. Pantai Labu
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/syllanda_yn.lvrs?stkn=MXF4b2d3dGZ5ZXVmZQ==" class="social-btn" aria-label="Instagram Pemesanan">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://wa.me/qr/KQOL5QH3RIHXK1" class="social-btn" aria-label="WhatsApp Pemesanan">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="https://wa.me/qr/KQOL5QH3RIHXK1" class="social-btn" aria-label="WhatsApp Pemesanan">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://wa.me/qr/KQOL5QH3RIHXK1" class="social-btn" aria-label="WhatsApp Pemesanan">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 d-flex flex-column flex-sm-row justify-content-between align-items-center small text-secondary gap-2">
+          <p class="mb-0">© 2026 Coret. Seluruh hak cipta dilindungi undang-undang.</p>
+          <p class="mb-0">Dibuat dengan standar kualitas UI UX Pro Max</p>
+        </div>
+      </div>
+     </footer>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
